@@ -15,15 +15,18 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=200)),
+                ('description', models.TextField()),
             ],
         ),
         migrations.CreateModel(
-            name='Post',
+            name='Shoes',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('title', models.CharField(max_length=200)),
-                ('text', models.TextField()),
-                ('author', models.ForeignKey(to='catalog.Category')),
+                ('name', models.CharField(max_length=200)),
+                ('image', models.ImageField(upload_to=b'')),
+                ('price', models.IntegerField()),
+                ('decription', models.CharField(max_length=150)),
+                ('category_name', models.ForeignKey(to='catalog.Category')),
             ],
         ),
     ]

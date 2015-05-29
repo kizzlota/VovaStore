@@ -44,13 +44,10 @@
     <div class="row">
       <div class="col-md-2">
 <div class="list-group">
-  <a href="#" class="list-group-item ">
-    Мешти
-  </a>
-  <a href="#" class="list-group-item">Кросівки</a>
-  <a href="#" class="list-group-item">Чоботи</a>
-  <a href="#" class="list-group-item">Тапочки</a>
-  <a href="#" class="list-group-item">Туфлі</a>
+      {% block leftList %}
+
+      {% endblock %}
+
 </div>
       </div>
       <div class="col-md-10">
@@ -61,8 +58,7 @@
     </div>
 </div>
 
-      {% block second %}
-      {% endblock %}
+
 
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
